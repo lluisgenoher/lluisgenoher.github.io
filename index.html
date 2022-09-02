@@ -1,174 +1,117 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Lluís Genoher</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="es">
 
-		<!-- Header -->
-			<div id="header">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lluís Genoher</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&
+	family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
-				<div class="top">
+	<link rel="stylesheet" href="css/font/style.css">
+	<link rel="stylesheet" href="css/app.css">
 
-					<!-- Logo -->
-						<div id="logo">
-							<h1 id="title">Lluís Genoher</h1>
-							<p>Software Engineer</p>
-						</div>
+	<script defer src="js/app.js"></script>
+</head>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-							</ul>
-						</nav>
+<body>
 
-				</div>
+	<header class="header">
+		<h1 class="h1"><a href="#home" title="Lluís Genoher" class="a">Lluís Genoher</a></h1>
+		<nav class="nav">
+			<ul class="ul">
+				<li class="h1"><a href="home" title="Home" class="a">Item 1</a></li>
+				<li class="h1"><a href="about" title="About" class="a">Item 1</a></li>
+				<li class="h1"><a href="works" title="Works" class="a">Item 1</a></li>
+			</ul>
+		</nav>
+	</header>
 
-				<div class="bottom">
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/lluisgenoher/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/lluisgenoher" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="mailto:lluis.genoherm@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+	<main class="main">
 
-				</div>
-
+		<div class="section" id="home">
+			<div class="circles">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
 			</div>
+			<section class="section">
+				<h2 class="h2">Lluís Genoher</h2>
+				<h3 class="h3">Software developer</h3>
 
-		<!-- Main -->
-			<div id="main">
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+				<ul class="ul">
+					<li class="li">
+						<a href="#" class="a" title="LinkedIn" >
+							Visit my LinkedIn
+						</a>
+					</li>
+				
+					<li class="li">
+						<a href="#" class="a" title="Github">
+							Visit my Github
+						</a>
+					</li>
+				</ul>
+			</section>
 
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Lluís.</strong> <br/>
-								I'm a software developer.</h2>
-							</header>
+		</div>
 
-							<footer>
-								<a href="#portfolio" class="button scrolly">View my work  <span>&#8595;</span></a>
-							</footer>
+		<section class="section" id="works">
+			<h2 class="h2">Works</h2>
+			<h3 class="h3">Projects that I did</h3>
 
-						</div>
-					</section>
-
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<b>Share Taxi</b> <br />
-										<a href="#" class="image fit"><img src="images/pic01.png" alt="" /></a>
-										<header>
-											<p>App built with Java (Android Studio) using Mapbox API to share taxi with other people</p>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<b>Aquatics</b> <br />
-										<a href="#" class="image fit"><img src="images/pic02.png" alt="" /></a>
-										<header>
-											<p>Booking and patient management application built with React, Spring Boot, MySQL, AWS RDS and Heroku.</p>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<b>Air Quality</b> <br/>
-										<a href="#" class="image fit"><img src="images/pic03.png" alt="" /></a>
-										<header>
-											<p>First approach to Expo in which the air quality of each city is visualized.</p>
-										</header>
-									</article>
-								</div>
-																<div class="col-4 col-12-mobile">
-									<article class="item">
-										<b>Trivia Quiz</b> <br />
-										<a href="https://github.com/lluisgenoher/trivia" class="image fit"><img src="images/pic04.png" alt="" /></a>
-										<header>
-											<p>Trivia quiz made with HTML, CSS and JS.</p>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<b>Trade & Auction platform</b> <br />
-										<a href="https://github.com/lluisgenoher/brab" class="image fit"><img src="images/pic05.png" alt="" /></a>
-										<header>
-											<p>Trade & Auction platform made with HTML, CSS, JS and Spring Boot.</p>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<b>Article management</b> <br />
-										<a href="" class="image fit"><img src="images/pic05.png" alt="" /></a>
-										<header>
-											<p>Article management made with Android Studio.</p>
-										</header>
-									</article>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<p>Since the beginning I have had a great passion for the development of mobile and web applications, both frontend and
-							backend, especially with Java and Javascript languages. Totally committed to the philosophy of lifelong learning, which
-							allows me to grow every day in all aspects of life.</p>
-
-						</div>
-					</section>
+			<div class="grid">
+				<article class="article">
+					<a href="#" title="Work1">
+						<figure class="figure">
+							<img src="#" alt="Image" class="img" loading="lazy">
+						</figure>
+						<h4 class="h4">Name project</h4>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#" title="Work2">
+						<figure class="figure">
+							<img src="#" alt="Image" class="img" loading="lazy">
+						</figure>
+						<h4 class="h4">Name project</h4>
+					</a>
+				</article>
 			</div>
+		</section>
 
-		<!-- Footer -->
-			<div id="footer">
 
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Lluís Genoher. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+		<section class="section about" id="about">
+			<h2 class="h2">About</h2>
+			<p class="p">Lorem15</p>
+			<p class="p">Lorem15</p>
+			<p class="p">Lorem15</p>
 
-			</div>
+			<ul class="socialMedia">
+				<li class="li">
+					<a href="#" class="a" title="Name" target="_blank" rel="noopener noreferrer">
+						<svg class="svg"></svg>
+					</a>
+				</li>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+				<li class="li">
+					<a href="#" class="a" title="Name" target="_blank" rel="noopener noreferrer">
+						<svg class="svg"></svg>
+					</a>
+				</li>
+			</ul>
+		</section>
 
-	</body>
+	</main>
+
+	<footer class="footer">
+		<span class="span">Made with ♥ Lluís Genoher</span>
+	</footer>
+</body>
+
 </html>
