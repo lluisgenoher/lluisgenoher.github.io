@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lluís Genoher</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,21 +11,47 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&
 	family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/font/style.css">
-	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
-	<script defer src="js/app.js"></script>
+	<script defer src="assets/js/app.js"></script>
 </head>
 
 <body>
+
+	<div id="cursor"></div>
+
+	<div class="circles">
+		<svg class="circle circle1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+			<path class="path"
+				d="M56.1,-18.9C65.4,10.3,60.5,43.4,41.1,57.9C21.7,72.3,-12.3,67.9,-29.4,52.6C-46.5,37.3,-46.8,11,-39.1,-16.1C-31.4,-43.2,-15.7,-71.1,3.8,-72.3C23.4,-73.6,46.8,-48.2,56.1,-18.9Z"
+				transform="translate(100 100)" />
+		</svg>
+		<svg class="circle circle2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+			<path class="path"
+				d="M50.9,-76.4C65.8,-69.6,77.6,-55.2,79.3,-39.7C81,-24.2,72.6,-7.5,66.7,7.1C60.7,21.7,57.2,34.1,49.9,44.1C42.5,54.1,31.4,61.6,19.2,65C7.1,68.3,-6.2,67.3,-16.4,61.7C-26.6,56,-33.6,45.6,-39.2,35.9C-44.8,26.1,-49,16.9,-55.6,4.9C-62.1,-7.1,-71.1,-21.8,-68.8,-33.4C-66.6,-44.9,-53.1,-53.3,-39.8,-60.8C-26.4,-68.3,-13.2,-74.9,2.4,-78.6C18,-82.3,36,-83.1,50.9,-76.4Z"
+				transform="translate(100 100)" />
+		</svg>
+		<svg class="circle circle3" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+			<path class="path"
+				d="M34.5,-42.8C47.8,-30.1,63.6,-22,69.9,-9C76.2,4.1,73.1,22.3,63.9,35.6C54.6,48.9,39.3,57.4,23.2,62.8C7.1,68.2,-9.7,70.5,-20.5,63.5C-31.4,56.5,-36.3,40.1,-41.9,26.3C-47.4,12.4,-53.5,0.9,-52.9,-10.5C-52.2,-21.9,-44.8,-33.2,-34.9,-46.6C-24.9,-59.9,-12.5,-75.2,-0.9,-74.2C10.7,-73.1,21.3,-55.6,34.5,-42.8Z"
+				transform="translate(100 100)" />
+		</svg>
+		<svg class="circle circle4" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+			<path class="path"
+				d="M34.5,-42.8C47.8,-30.1,63.6,-22,69.9,-9C76.2,4.1,73.1,22.3,63.9,35.6C54.6,48.9,39.3,57.4,23.2,62.8C7.1,68.2,-9.7,70.5,-20.5,63.5C-31.4,56.5,-36.3,40.1,-41.9,26.3C-47.4,12.4,-53.5,0.9,-52.9,-10.5C-52.2,-21.9,-44.8,-33.2,-34.9,-46.6C-24.9,-59.9,-12.5,-75.2,-0.9,-74.2C10.7,-73.1,21.3,-55.6,34.5,-42.8Z"
+				transform="translate(100 100)" />
+		</svg>
+		</svg>
+	</div>
 
 	<header class="header">
 		<h1 class="h1"><a href="#home" title="Lluís Genoher" class="a">Lluís Genoher</a></h1>
 		<nav class="nav">
 			<ul class="ul">
-				<li class="h1"><a href="home" title="Home" class="a">Item 1</a></li>
-				<li class="h1"><a href="about" title="About" class="a">Item 1</a></li>
-				<li class="h1"><a href="works" title="Works" class="a">Item 1</a></li>
+				<li class="li"><a href="home" title="Home" class="a">Item 1</a></li>
+				<li class="li"><a href="about" title="About" class="a">Item 1</a></li>
+				<li class="li"><a href="works" title="Works" class="a">Item 1</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -33,53 +60,102 @@
 	<main class="main">
 
 		<div class="section" id="home">
-			<div class="circles">
-				<div class="circle"></div>
-				<div class="circle"></div>
-				<div class="circle"></div>
-				<div class="circle"></div>
-			</div>
-			<section class="section">
-				<h2 class="h2">Lluís Genoher</h2>
-				<h3 class="h3">Software developer</h3>
+
+			<section class="section info">
+				<h2 class="h2">&nbspLluís Genoher</h2>
+				<h3 class="h3">&nbspSoftware developer</h3>
 
 
-				<ul class="ul">
+				<ul class="socialMedia">
 					<li class="li">
-						<a href="#" class="a" title="LinkedIn" >
-							Visit my LinkedIn
+						<a href="https://www.linkedin.com/in/lluisgenoher/" class="a" title="LinkedIn" target="_blank"
+							rel="noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg"
+								viewBox="0 0 16 16">
+								<path
+									d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+							</svg>
 						</a>
 					</li>
 				
 					<li class="li">
-						<a href="#" class="a" title="Github">
-							Visit my Github
+						<a href="https://github.com/lluisgenoher" class="a" title="GitHub" target="_blank" rel="noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg"
+								viewBox="0 0 16 16">
+								<path
+									d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+							</svg>
+						</a>
+					</li>
+					<li class="li">
+						<a href="mailto:lluisgenoherm@gmail.com" class="a" title="Email" target="_blank" rel="noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg"
+								viewBox="0 0 16 16">
+								<path
+									d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+							</svg>
 						</a>
 					</li>
 				</ul>
+
+				<p class="p">Scroll to continue</p>
+
+				
 			</section>
 
 		</div>
 
-		<section class="section" id="works">
+		<section class="section works" id="works">
 			<h2 class="h2">Works</h2>
 			<h3 class="h3">Projects that I did</h3>
 
 			<div class="grid">
 				<article class="article">
-					<a href="#" title="Work1">
+					<a href="#works" title="Share Taxi">
 						<figure class="figure">
-							<img src="#" alt="Image" class="img" loading="lazy">
+							<img src="assets/images/picShareTaxi.png" alt="Image Share Taxi" class="img" loading="lazy">
 						</figure>
-						<h4 class="h4">Name project</h4>
+						<h4 class="h4">Share Taxi</h4>
+						<a class="a"> Java(Android), MySQL</a>
+					</a>
+				</article>
+
+				<article class="article">
+					<a href="https://github.com/lluisgenoher/trivia" title="Trivia Quiz" target="_blank">
+						<figure class="figure">
+							<img src="assets/images/picTrivia.png" alt="Image Trivia Quiz" class="img" loading="lazy">
+						</figure>
+						<h4 class="h4">Trivia Quiz</h4>
+						<a class="a">HTML, CSS, JS</a>
+					</a>
+				</article>
+
+				<article class="article">
+					<a href="https://github.com/lluisgenoher/brab" title="Trade and Auction platform" target="_blank">
+						<figure class="figure">
+							<img src="assets/images/picTrade.png" alt="Image Tradre and Auction platform" class="img" loading="lazy">
+						</figure>
+						<h4 class="h4">Trade and Auction platform</h4>
+						<a class="a">HTML, CSS, JS, Spring Boot</a>
+					</a>
+				</article>
+				
+				<article class="article">
+					<a href="https://github.com/lluisgenoher/air-quality" title="Air Quality" target="_blank">
+						<figure class="figure">
+							<img src="assets/images/picAirQuality.png" alt="Image Air Quality" class="img" loading="lazy">
+						</figure>
+						<h4 class="h4">Air Quality</h4>
+						<a class="a">Expo</a>
 					</a>
 				</article>
 				<article class="article">
-					<a href="#" title="Work2">
+					<a href="#works" title="Aquatics">
 						<figure class="figure">
-							<img src="#" alt="Image" class="img" loading="lazy">
+							<img src="assets/images/picAquatics.png" alt="Image Aquatics" class="img" loading="lazy">
 						</figure>
-						<h4 class="h4">Name project</h4>
+						<h4 class="h4">Aquatics</h4>
+						<a class="a">React, Spring Boot, MySQL</a>
 					</a>
 				</article>
 			</div>
@@ -87,21 +163,40 @@
 
 
 		<section class="section about" id="about">
-			<h2 class="h2">About</h2>
-			<p class="p">Lorem15</p>
-			<p class="p">Lorem15</p>
-			<p class="p">Lorem15</p>
-
+			<h2 class="h2">About Me</h2>
+			<p class="p">Recent graduate in Computer Management and Information Systems Engineering. <br/>
+				Totally committed to the philosophy of lifelong learning, which allows me to grow every day in all aspects of life.
+			</p>
+		<p class="p">
+			Ever since I started I've had a passion for building an application from an idea, it really is magic, both frontend and
+			backend.
+		</p>
 			<ul class="socialMedia">
 				<li class="li">
-					<a href="#" class="a" title="Name" target="_blank" rel="noopener noreferrer">
-						<svg class="svg"></svg>
+					<a href="https://www.linkedin.com/in/lluisgenoher/" class="a" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg"
+							viewBox="0 0 16 16">
+							<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+						</svg>
 					</a>
 				</li>
 
 				<li class="li">
-					<a href="#" class="a" title="Name" target="_blank" rel="noopener noreferrer">
-						<svg class="svg"></svg>
+					<a href="https://github.com/lluisgenoher" class="a" title="GitHub" target="_blank" rel="noopener noreferrer">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg"
+							viewBox="0 0 16 16">
+							<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+						</svg>
+					</a>
+				</li>
+
+				<li class="li">
+					<a href="mailto:lluisgenoherm@gmail.com" class="a" title="Email" target="_blank" rel="noopener noreferrer">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg"
+							viewBox="0 0 16 16">
+							<path
+								d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+						</svg>
 					</a>
 				</li>
 			</ul>
@@ -110,7 +205,7 @@
 	</main>
 
 	<footer class="footer">
-		<span class="span">Made with ♥ Lluís Genoher</span>
+		<span class="span">Made with ❤️ Lluís Genoher</span>
 	</footer>
 </body>
 
