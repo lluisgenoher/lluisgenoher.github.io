@@ -17,7 +17,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(body.light) {
     --black:      #f0efe9;
     --white:      #111110;
     --gray-light: #2a2a28;
@@ -366,7 +366,7 @@ body.dark {
 .theme-toggle {
   background:   none;
   border:       1px solid var(--gray-light);
-  color:        var(--gray-mid);
+  color:        var(--black);
   font-size:    14px;
   padding:      0.3rem 0.6rem;
   cursor:       pointer;
