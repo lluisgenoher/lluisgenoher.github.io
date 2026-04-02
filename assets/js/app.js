@@ -1,23 +1,13 @@
-"use strict";
+const btn = document.getElementById('themeBtn');
+const body = document.body;
 
-$(document).ready(function () {
-  $("body").on({
-    mousemove: function (e) {
-      let clientX = e.originalEvent.clientX;
-      let clientY = e.originalEvent.clientY;
-      $("#cursor").css({
-        left: clientX - 40 + "px",
-        top: clientY - 40 + "px",
-      });
-    },
-  });
+const saved = localStorage.getItem('theme');
+if (saved) body.classList.add(saved);
 
-  $(".a, .article").on({
-    mouseover: function () {
-      $("#cursor").addClass("mini");
-    },
-    mouseout: function () {
-      $("#cursor").removeClass("mini");
-    },
-  });
+btn.addEventListener('click', () => {
+  const isLight = body.classList.contains('light');
+  body.classList.toggle('light', !isLight);
+  body.classList.toggle('dark', isLight);
+  localStorage.setItem('theme', isLight ? 'dark' : 'light');
+  btn.textContent = isLight ? '☀' : '☾';
 });
