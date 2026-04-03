@@ -55,6 +55,12 @@ nav {
   gap:           1rem;
 }
 
+.nav-right {
+  display:     flex;
+  align-items: center;
+  gap:         2rem;
+}
+
 .nav-logo {
   font-family:     'DM Serif Display', serif;
   font-size:       1.1rem;
@@ -339,12 +345,18 @@ footer {
   letter-spacing: 0.06em;
 }
 
-.footer-dot {
-  width:         6px;
-  height:        6px;
-  background:    var(--gray-light);
-  border-radius: 50%;
+.footer-top {
+  font-size:       11px;
+  color:           var(--gray-mid);
+  letter-spacing:  0.06em;
+  text-decoration: none;
+  transition:      color 0.2s;
 }
+
+.footer-top:hover {
+  color: var(--black);
+}
+
 
 /* ─── Theme ─────────────────────────────────────────── */
 body.light {
